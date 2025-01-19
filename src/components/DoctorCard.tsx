@@ -1,7 +1,19 @@
 import Card from 'react-bootstrap/Card';
-import Doctor from '../classes/Doctor';
+import IDoctor from '../interfaces/Doctor';
+import DoctorClass from '../classes/Doctor';
 
-export default function DoctorCard(doctor: Doctor) {
+export default function DoctorCard(doctorData: IDoctor) {
+const doctor = new DoctorClass(
+  doctorData.id,
+  doctorData.imagen,
+  doctorData.nombre,
+  doctorData. especialidad,
+  doctorData.descripcion,
+  doctorData.experiencia
+)
+
+if(doctor.id==1){doctor.updateSpecialty("Med. General")} // cambio de especialidad a doctor con id=1
+
 
   return (
     <>
@@ -11,7 +23,10 @@ export default function DoctorCard(doctor: Doctor) {
           <Card.Title>{doctor.nombre}</Card.Title>
           <Card.Title className='fst-italic'>{doctor.especialidad}</Card.Title>
           <Card.Text>
-            {doctor.descripcion}
+            {doctor.descripcion}.
+          </Card.Text>
+          <Card.Text>
+            Años de experiencia: {doctor.experiencia}.
           </Card.Text>
         </Card.Body>
       </Card>

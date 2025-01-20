@@ -1,6 +1,6 @@
 # Introducción a TypeScript en ReactJS 
 
-## 1. Preguntas Teóricas sobre TypeScript
+## Preguntas Teóricas sobre TypeScript
 **- ¿Qué es TypeScript y para qué se utiliza?**
 TypeScript es un lenguaje de programación creado el año 2012 por Microsoft, superconjunto de JavaScript, lo cual, lo convierte en una versión más extendida y robusta de este último. Fue diseñado para superar algunas de las limitaciones de JavaScript agregando características que facilitan la escritura de código más sólido y mantenible, como, por ejemplo, el uso de clases, interfaces y tipos de datos para las variables. 
 Si bien TypeScript podemos usarlo en cualquier ámbito donde se pueda usar JavaScript, se utiliza principalmente en el desarrollo de aplicaciones web más complejas y en proyectos que necesitan un mantenimiento a largo plazo ya que dado sus particularidades facilitan la construcción y mantención de este tipo de aplicaciones. También, es común integrarlo en proyectos ya existentes de JavaScript que han ido escalando, ya que, al ser compatibles, su integración se facilita.
@@ -27,16 +27,16 @@ Existen 3 categorías de los tipos de datos de TypeScript:
 -  Definido por el usuario: Incluyen enumeración, matriz, interfaz, tupla y clase.
 Este sistema de tipos, al llevarnos a definir los tipos de las variables y funciones desde el principio, permite evitar problemas de lógica y que los errores se detecten en tiempo de compilación en lugar de en tiempo de ejecución. Lo cual mejora los tiempos y facilita el desarrollo de una aplicación en particular cuando es de mayor complejidad.
 
-## 2. Definición de Tipos e Inferencia
+## Definición de Tipos e Inferencia
 En este proyecto se utiliza correctamente la definición de tipos, utilizando una interfaz llamada doctor que define sus parametros con una correcta definición de los tipos aosciados a los paramentros, permitiendo que cuando se reciben los datos de los doctores disponibles en un archivo JSON, estos se guarden bajo esta definición y se utilizen a lo largo del sitio.
 
-## 3. Definición de Interfaces y Clases en TypeScript
+## Definición de Interfaces y Clases en TypeScript
 En el archivo ubicado en interfaces/Doctor se crea la interfaz de doctor con sus parametros y tipos descritos. en el archivo classes/DoctorClass se crea la clase que representa a un doctor con dos metodos uno que permite obtener la información de un doctor y el segundo nos permite actualizar la especialidad de un doctor en especifico, en el primer metodo mencionado no se especifica el tipo de salida de la función con el objetivo de mostrar el uso de inferencias en TypeScript.
 
-## 4. TypeScript y ReactJS: Implementación Básica en un Componente
+## TypeScript y ReactJS: Implementación Básica en un Componente
 En la carpeta Components/doctorCard, se encuentra el componente que nos permite visualizar la información de un doctor en pantalla, el cual recibe los datos como props. este componente al igual que las vista se encuentra tipado en TypeScript asignando correctamente tipos a los datos utilizados.
 
-## 5. Ventajas de TypeScript en el Desarrollo con ReactJS
+## Ventajas de TypeScript en el Desarrollo con ReactJS
 EL uso de TypeScript favorece el desarrollo de aplicaciones a mayor escala por sobre JavaScript, ya que permite obtener multiples beneficios como una mayor legibilidad del codigo, nos permite crear estructuras en base a interfaces y clases permitiendo trabajar con una estructura mas definida de los datos en una aplicación, y la detección temprana de errores, lo cual, favorece el desarrollo en particular en aplicaciones que manejan gran volumen de datos como lo es el caso del proyecto hospital presentado.
 
  ### Visualización del proyecto

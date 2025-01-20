@@ -38,3 +38,24 @@ En la carpeta Components/doctorCard, se encuentra el componente que nos permite 
 
 ## 5. Ventajas de TypeScript en el Desarrollo con ReactJS
 EL uso de TypeScript favorece el desarrollo de aplicaciones a mayor escala por sobre JavaScript, ya que permite obtener multiples beneficios como una mayor legibilidad del codigo, nos permite crear estructuras en base a interfaces y clases permitiendo trabajar con una estructura mas definida de los datos en una aplicación, y la detección temprana de errores, lo cual, favorece el desarrollo en particular en aplicaciones que manejan gran volumen de datos como lo es el caso del proyecto hospital presentado.
+
+ ### Visualización del proyecto
+Para visualizar este proyecto se necesita que previamente cuentes con la instalación de:
+- **Git**: [sitio de descarga] (https://git-scm.com/downloads)
+- **Node.js**: [sitio de descarga] (https://nodejs.org/en/download/package-manager)
+- **Visual Studio Code**: [sitio de descarga] (https://code.visualstudio.com/download)
+  
+Una vez que ya cuentes con lo descrito anteriormente, debes clonar este repositorio en una carpeta local, mediante el siguiente comando:
+```bash
+git clone https://github.com/lorenasotosanmartin/M4_EP1.git
+```
+cuando ya este clonado, escribir el siguiente comando en la consola: 
+```bash
+npm  i
+```
+y ejecutar el comando, para inicializar el proyecto: 
+```bash
+npm run dev
+```
+Finalmente, para visualizar el proyecto en tu navegador debes abrir la url http://localhost:5173/ 
+
